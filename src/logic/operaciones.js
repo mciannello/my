@@ -30,12 +30,13 @@ export default function operaciones(estado, nombreDeBoton){
         if(estado.operador && estado.siguiente){
             const result =operate(estado.total, estado.siguiente, estado.operador)
             
-            return{total:Big(result).div(Big("100").toString()), siguiente: null, operador: null}
-            
+            return {
+                total: Big(result).div(Big("100")).toString(),siguiente: null,operador: null,
+              }            
         }
         
         if(estado.siguiente){
-            return{siguiente:Big(estado.siguiente).div(Big("100").toString)}
+            return{siguiente:Big(estado.siguiente).div(Big("100").toString),}
            
         }
         
@@ -44,7 +45,7 @@ export default function operaciones(estado, nombreDeBoton){
     
     if(nombreDeBoton ==="."){
         if(estado.siguiente){
-            if(estado.siguiente.include("."))return{}
+            if(estado.siguiente.includes("."))return{}
             return{siguiente:estado.siguiente +"."}
         }
         return {siguiente:"0."}
