@@ -1,5 +1,5 @@
 import Big from "big.js";
-import operate from "./operate";
+import operate from "./matematica";
 import isNumber from "./IsNumber";
 
 export default function operaciones(estado, nombreDeBoton){

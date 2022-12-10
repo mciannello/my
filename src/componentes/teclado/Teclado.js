@@ -18,7 +18,7 @@ export default function Teclado ({clickHandler}){
         <Button name="AC" clickHandler={handleClick}/>
         <Button name="(" clickHandler={handleClick}/>
         <Button name=")" clickHandler={handleClick}/>
-        <Button name="log" clickHandler={handleClick}/>
+        <Button name="/" clickHandler={handleClick}/>
 
       </div>
       <div className="fila">
