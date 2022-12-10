@@ -7,11 +7,18 @@ export default function Teclado ({clickHandler}){
 
   return (
     <div className="botonera">
+       <div className="fila">
+        <Button name="In" clickHandler={handleClick}/>
+        <Button name="xⁿ" clickHandler={handleClick}/>
+        <Button name="e" clickHandler={handleClick}/>
+        <Button name="√" clickHandler={handleClick}/>
+
+      </div>
       <div className="fila">
         <Button name="AC" clickHandler={handleClick}/>
-        <Button name="+/-" clickHandler={handleClick}/>
-        <Button name="%" clickHandler={handleClick}/>
-        <Button name="/" clickHandler={handleClick}/>
+        <Button name="(" clickHandler={handleClick}/>
+        <Button name=")" clickHandler={handleClick}/>
+        <Button name="log" clickHandler={handleClick}/>
 
       </div>
       <div className="fila">
@@ -36,6 +43,7 @@ export default function Teclado ({clickHandler}){
         <Button  name="0" clickHandler={handleClick}/>
         <Button  name="." clickHandler={handleClick}/>
         <Button name="=" clickHandler={handleClick}/>
+        <Button name="AC" clickHandler={handleClick}/>
       </div>
     </div>
   )

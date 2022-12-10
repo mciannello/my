@@ -11,6 +11,7 @@ export default function operaciones(estado, nombreDeBoton){
         }
     }
 
+  
     if(isNumber(nombreDeBoton)){
         if(nombreDeBoton==="0" && estado.siguiente=== "0")return{}
 
@@ -25,6 +26,8 @@ export default function operaciones(estado, nombreDeBoton){
         }
     return {siguiente:nombreDeBoton, total:null}
     }
+
+    
     if(nombreDeBoton==="%"){
         
         if(estado.operador && estado.siguiente){
@@ -42,6 +45,8 @@ export default function operaciones(estado, nombreDeBoton){
         
         return{}
     }
+
+    
     
     if(nombreDeBoton ==="."){
         if(estado.siguiente){

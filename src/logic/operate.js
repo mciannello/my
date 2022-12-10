@@ -11,4 +11,8 @@ if(operador==="-") return uno.minus(dos).toString()
 if(operador==="x") return uno.times(dos).toString()
 
 if(operador==="/") return uno.div(dos).toString()
+
+
 }
+
+//usar mathjs
