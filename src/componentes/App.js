@@ -1,9 +1,9 @@
 import './App.css'
 import Teclado from './teclado/Teclado'
 import Pantalla from './pantalla/Pantalla'
-import Random from  '../logic/matematica'
 import { Component } from 'react'
 import operaciones from '../logic/operaciones'
+import 'animate.css';
 
 
 
