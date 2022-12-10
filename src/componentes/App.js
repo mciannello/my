@@ -19,11 +19,11 @@ class App extends Component {
   render (){
     return(
     <div className="contenedor">
-      <h1>Calculadora</h1>
+      <h1>CeciI</h1>
       <Pantalla value={this.state.siguiente || this.state.total || "0"} />
       {/* <Pantalla value={this.state.siguiente || this.state.total || "0"} /> */}
       <Teclado clickHandler={this.handleClick}/>
-     <Random />
+  
     </div>
   )
 }

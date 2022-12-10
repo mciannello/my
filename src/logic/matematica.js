@@ -17,10 +17,30 @@
             return numeroUno =parseInt(numeroUno)+parseInt(numeroDos)
           case "-": 
             return  numeroUno =parseInt(numeroUno)-parseInt(numeroDos)
-            case "x":
+          case "x":
               return numeroUno =parseInt(numeroUno)*parseInt(numeroDos)
-            case "/": 
+          case "/": 
               return  numeroUno =parseInt(numeroUno)/parseInt(numeroDos)
+          case "cos":
+                return Math.cos(numeroUno) * numeroDos;
+          case "log": 
+            return Math.log(numeroDos) / Math.log(numeroUno);
+          case "sen":
+              return Math.sin(numeroUno);
+          case "tg":
+              return Math.tan(numeroUno);
+          case "x²": 
+          numeroDos=2;
+          return Math.pow(numeroUno, numeroDos);
+          case "x³": 
+          numeroDos=3;
+          return Math.pow(numeroUno,numeroDos);
+          case "xⁿ": 
+          return Math.pow(numeroUno, numeroDos);
+          case "√x": 
+          return Math.sqrt(numeroUno);
+          case "e": 
+          return numeroUno * (Math.E ** numeroDos);
           default:
             return "0"
         }
