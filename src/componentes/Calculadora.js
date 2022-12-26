@@ -3,7 +3,7 @@ import React, {useState} from "react";
 
 const Calculadora =()=>{
 
-  // const handleClick =nombreDeBoton=> clickHandler(nombreDeBoton);
+
   const [val, setVal] =useState("");
   
   const  backspace =() =>{
